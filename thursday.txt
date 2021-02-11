@@ -1,0 +1,206 @@
+#
+interface Ethernet0/0/10
+#
+interface Ethernet0/0/11
+#
+interface Ethernet0/0/12
+#
+interface Ethernet0/0/13
+#
+interface Ethernet0/0/14
+#
+interface Ethernet0/0/15
+#
+interface Ethernet0/0/16
+#
+interface Ethernet0/0/17
+#
+interface Ethernet0/0/18
+#
+interface Ethernet0/0/19
+#
+interface Ethernet0/0/20
+#
+interface Ethernet0/0/21
+#
+interface Ethernet0/0/22
+#
+interface GigabitEthernet0/0/1
+#
+interface GigabitEthernet0/0/2
+#
+interface NULL0
+#
+user-interface con 0
+user-interface vty 0 4
+#
+return
+
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>
+<Johnte>display saved	
+<Johnte>display saved-configuration 
+#
+sysname Johnte
+#
+cluster enable
+ntdp enable
+ndp enable
+#
+drop illegal-mac alarm
+#
+diffserv domain default
+#
+drop-profile default
+#
+aaa 
+ authentication-scheme default
+ authorization-scheme default
+ accounting-scheme default
+ domain default 
+ domain default_admin 
+ local-user admin password simple admin
+ local-user admin service-type http
+#
+interface Vlanif1
+#
+interface MEth0/0/1
+#
+interface Ethernet0/0/1
+#
+interface Ethernet0/0/2
+#
+interface Ethernet0/0/3
+#
+interface Ethernet0/0/4
+#
+interface Ethernet0/0/5
+#
+interface Ethernet0/0/6
+#
+interface Ethernet0/0/7
+#
+interface Ethernet0/0/8
+#
+interface Ethernet0/0/9
+#
+interface Ethernet0/0/10
+#
+interface Ethernet0/0/11
+#
+interface Ethernet0/0/12
+#
+interface Ethernet0/0/13
+#
+interface Ethernet0/0/14
+#
+interface Ethernet0/0/15
+#
+interface Ethernet0/0/16
+#
+interface Ethernet0/0/17
+#
+interface Ethernet0/0/18
+#
+interface Ethernet0/0/19
+#
+interface Ethernet0/0/20
+#
+interface Ethernet0/0/21
+#
+interface Ethernet0/0/22
+#
+interface GigabitEthernet0/0/1
+#
+interface GigabitEthernet0/0/2
+#
+interface NULL0
+#
+user-interface con 0
+user-interface vty 0 4
+#
+return
+<Johnte>
+<Johnte>
+<Johnte>display startup
+MainBoard: 
+  Configured startup system software:        NULL
+  Startup system software:                   NULL
+  Next startup system software:              NULL
+  Startup saved-configuration file:          NULL
+  Next startup saved-configuration file:     flash:/thursday.zip
+  Startup paf file:                          NULL
+  Next startup paf file:                     NULL
+  Startup license file:                      NULL
+  Next startup license file:                 NULL
+  Startup patch package:                     NULL
+  Next startup patch package:                NULL
+<Johnte>startup saved	
+<Johnte>startup saved-configuration 
+                                    ^
+Error:Incomplete command found at '^' position.
+<Johnte>compare	
+<Johnte>compare configuration
+Info: The current configuration is the same as the next startup configuration fi
+le.
+<Johnte>reset saved	
+<Johnte>reset saved-configuration 
+Warning: The action will delete the saved configuration in the device.
+The configuration will be erased to reconfigure. Continue? [Y/N]:y
+Warning: Now clearing the configuration in the device.
+Feb 11 2021 09:17:16-08:00 Johnte %%01CFM/4/RST_CFG(l)[52]:The user chose Y when
+ deciding whether to reset the saved configuration.
+Info: Succeeded in clearing the configuration in the device.
+<Johnte>quit User interface con0 is available
+
+
+
+Please Press ENTER.
+
+<Johnte>user
+        ^
+Error: Unrecognized command found at '^' position.
+<Johnte>display version
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 5.110 (S3700 V200R001C00)
+Copyright (c) 2000-2011 HUAWEI TECH CO., LTD
+
+Quidway S3700-26C-HI Routing Switch uptime is 0 week, 0 day, 0 hour, 38 minutes
+<Johnte>dir
+Directory of flash:/
+
+  Idx  Attr     Size(Byte)  Date        Time       FileName 
+    0  drw-              -  Aug 06 2015 21:26:42   src
+    1  drw-              -  Feb 11 2021 08:40:22   compatible
+    2  drw-              -  Feb 11 2021 08:53:10   test1
+    3  drw-              -  Feb 11 2021 08:59:32   wamocho
+    4  -rw-            124  Feb 11 2021 09:17:16   thursday.zip
+    5  drw-              -  Feb 11 2021 08:59:41   kenya
+    6  drw-              -  Feb 11 2021 08:59:17   tz
+
+32,004 KB total (31,952 KB free)
+
+<Johnte>format flash:
+All data(include configuration and system startup file) on flash: will be lost ,
+ proceed with format ? [Y/N]:n
+<Johnte>display version
+Huawei Versatile Routing Platform Software
+VRP (R) software, Version 5.110 (S3700 V200R001C00)
+Copyright (c) 2000-2011 HUAWEI TECH CO., LTD
+
+Quidway S3700-26C-HI Routing Switch uptime is 0 week, 0 day, 0 hour, 49 minutes
+<Johnte>startup saved
+                      ^
+Error:Incomplete command found at '^' position.
+<Johnte>startup saved-configuration thursday.zip
+Info: Succeeded in setting the configuration for booting system.
+<Johnte>
